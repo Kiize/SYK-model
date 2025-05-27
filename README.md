@@ -1,10 +1,5 @@
 The SYK model is a statistical model where N Majorana fermions living on lattice sites interact at random.
-For a q-vertex model, that is, the interaction couples q different Majorana fermions, the Hamiltonian reads
-$$
-    H_{int} = \frac{1}{q!} \sum_{i_1, \dots, i_q} j_{i_{1}\dots i_{q}} \psi_{i_{1}}\dots \psi_{i_{q}}.
-$$
-Where the couplings j are gaussianly distributed with zero mean and variance 
-$$J^2(q-1)!/N^{q-1}.$$ 
+For a q-vertex model the interaction couples q different Majorana fermions and the couplings are gaussianly distributed with zero mean and variance J^2(q-1)!/N^{q-1}. 
 The Hamiltonian must still be hermitian to represent a physical system, this impose another constraint on the coefficients.
 
 With the code q2model.jl one can simulate, using the ITensors julia library, a system of N Majorana fermions interacting via the SYK model with q = 2.
